@@ -1,0 +1,36 @@
+.visitation {
+  display: flex;
+  flex-basis: 360px;
+  flex-direction: column;
+  position: relative;
+
+  margin-right: 40px;
+
+    &__link::before {
+      content:'';
+
+      position: absolute;
+      right: 0;
+
+      background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+    }
+}
+
+.visitation__img {
+  margin-bottom: 34px;
+}
+
+.visitation__description {
+  letter-spacing: 1px;
+
+  padding-bottom: 10px;
+}
+
+.visitation__time {
+   font-family: "Futura PT", Arial, sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+}

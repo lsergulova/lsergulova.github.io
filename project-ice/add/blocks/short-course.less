@@ -1,0 +1,34 @@
+.short-course {
+  display: flex;
+  flex-basis: 760px;
+  position: relative;
+
+    &__link::before {
+      content:'';
+
+      position: absolute;
+      right: 0;
+
+      background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+    }
+}
+
+.short-course__img {
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.short-course__description {
+  letter-spacing: 1px;
+
+  padding-bottom: 25px;
+}
+
+.short-course__time {
+   font-family: "Futura PT", Arial, sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+}
