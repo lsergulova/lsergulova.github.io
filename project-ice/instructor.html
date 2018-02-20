@@ -5,13 +5,15 @@
   <title>Ice Ace</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__wrapper container">
 
     <div class="page-header__logo-img">
-      <a href="index.html"><img src="add/img/logo.png" alt="Логотип Ice Ace" class="logo_img"></a>
+      <a href="index.html">
+        <img src="img/logo.png" alt="Логотип Ice Ace" class="logo_img"></a>
     </div>
 
     <nav class="page-header__main-nav">
@@ -42,54 +44,59 @@
 
   </div>
 </header>
+
   <main>
-    <div class="container">
-      <h1 class="instructors">Инструкторы школы</h1>
+    <div class="instructors container">
+      <h1 class="instructors__caption">Инструкторы школы</h1>
       <form action="#" method="post">
-        <input type="search" name="search" value="Начните вводить имя">
+        <input type="search" name="search" value="Начните вводить имя" class="instructors__search">
       </form>
     </div>
-    <section class="instructors_list">
-      <ul class="photo_list">
-        <li>
-          Арсений Петров
-          <a href="#">
-            <img src="http://via.placeholder.com/100x50" alt="Фото инструктора">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="http://via.placeholder.com/100x50" alt="Фото инструктора">
-          </a>
-        </li>
-        <li>
-          Степан Александров
-          <a href="#">
-            <img src="http://via.placeholder.com/100x50" alt="Фото инструктора">
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="http://via.placeholder.com/100x50" alt="Фото инструктора">
-          </a>
-        </li>
-        <li>
-          Виталий Сергеев
-          <a href="#">
-            <img src="http://via.placeholder.com/100x50" alt="Фото инструктора">
-          </a>
-        </li>
-      </ul>
+
+    <section class="photo">
       <div class="container">
-        <div class="instructors_block">
-          <div class="instructors_photo">
+        <ul class="photo__title">
+          <li class="photo__list">
+          <a href="#">
+            <span class="photo__signature">Арсений Петров</span>
+            <img src="img/photo1.jpg" alt="Фото инструктора">
+          </a>
+          </li>
+          <li class="photo__list">
+            <a href="#">
+              <img src="img/photo2.jpg" alt="Фото инструктора">
+            </a>
+          </li>
+          <li class="photo__list">
+          <a href="#">
+            <span class="photo__signature">Степан Александров</span>
+            <img src="img/photo3.jpg" alt="Фото инструктора">
+          </a>
+          </li>
+          <li class="photo__list">
+            <a href="#">
+              <img src="img/photo4.jpg" alt="Фото инструктора">
+            </a>
+          </li>
+          <li class="photo__list">
+          <a href="#">
+            <span class="photo__signature">Виталий Сергеев</span>
+            <img src="img/photo5.jpg" alt="Фото инструктора">
+          </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tubs">
+        <div class="tubs__block">
+          <div class="tubs__photo">
             <img src="#" alt="Константин Константинопольский">
           </div>
-          <h2>Константин Константинопольский</h2>
-          <div class="instructors_description">
-            <table>
-              <tr>
-                <th>Спорт</th>
+          <h2 class="tubs__caption">Константин Константинопольский</h2>
+          <div class="tubs__description">
+            <table class="tubs__table">
+              <tr class="tubs__line">
+                <th class="tubs__cell">Спорт</th>
                 <th>Стаж катания</th>
                 <th>Стиль</th>
               </tr>
@@ -134,6 +141,7 @@
         </div>
       </div>
     </section>
+
     <section class="instructors_photo">
       <ul>
         <li>
@@ -159,37 +167,46 @@
       </ul>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <div class="footer-top">
-        <div class="logo">
-          <img src="add/img/logo.png" alt="Логотип" class="logo_img">
-        </div>
-        <ul class="social_btn">
-          <li><a href="#" class="youtube">youtube</a></li>
-          <li><a href="#" class="instagram">instagram</a></li>
-          <li><a href="#" class="facebook">facebook</a></li>
-          <li><a href="#" class="vk">vk</a></li>
-        </ul>
-        <div class="phone_mail">
-          <a href="tel:88008008080" class="phone_link">8 (800) 800 80 80</a>
-          <p>hello@iceace.com</p>
-        </div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="img/logo.png" alt="Логотип" class="logo_img">
       </div>
-      <div class="footer-bottom">
-        <div class="social_info">
-          <p>2017 "Ice Ace" - школа сноуборда и горных лыж. Все права защищены</p>
-        </div>
-        <nav class="footer_nav">
-          <ul>
-            <li><a href="schedule.html">Расписание</a></li>
-            <li><a href="#">Инструкторы</a></li>
-            <li><a href="#">Стоимость</a></li>
-            <li><a href="#">Как добраться</a></li>
-          </ul>
-        </nav>
+      <ul class="footer__social">
+        <li class="footer__youtube">
+          <a href="#"><img src="img/youtube.png" alt="Ютуб"></a>
+        </li>
+        <li class="footer__instagram">
+          <a href="#"><img src="img/instagram.png" alt="Инстаграм"></a>
+        </li>
+        <li class="footer__facebook">
+          <a href="#"><img src="img/facebook.png" alt="Фэйсбук"></a>
+        </li>
+        <li class="footer__youtubevk">
+          <a href="#"><img src="img/vk.png" alt="Вконтакте"></a>
+        </li>
+      </ul>
+      <div class="footer__phone">
+        <a href="tel:88008008080" class="footer__phone-link">8 (800) 800 80 80</a>
+        <p class="footer__mail">hello@iceace.com</p>
       </div>
     </div>
-  </footer>
+    <div class="footer__bottom">
+      <div class="footer__info">
+        <p class="footer__description"> &copy; 2017 <span class="footer__uppercase">"Ice Ace"</span> - школа сноуборда и горных лыж. Все права защищены</p>
+      </div>
+      <nav class="footer__menu">
+        <ul class="footer__title">
+          <li class="footer__list"><a href="schedule.html">Расписание</a></li>
+          <li class="footer__list"><a href="#">Инструкторы</a></li>
+          <li class="footer__list"><a href="#">Стоимость</a></li>
+          <li class="footer__list"><a href="#">Как добраться</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

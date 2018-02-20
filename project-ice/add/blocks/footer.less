@@ -5,16 +5,80 @@
   background-image: url("../img/footer-fon.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
   &__top {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     padding-top: 60px;
+    margin-bottom: 25px;
   }
+
+  &__logo {
+    margin-right: 290px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 260px;
+
+    margin-right: 260px;
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__phone-link {
+    font-family: "Futura PT Demi", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+  }
+
+  &__mail {
+    margin: 0;
+
+    font-family: "Futura PT Demi", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    letter-spacing: 1px;
+  }
+
+
   &__bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  &__info {
+    width: 303px;
+
+    font-family: "Futura PT Demi", Arial, sans-serif;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+  }
+
+  &__uppercase {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    display: flex;
+    width: 586px;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: flex-end;
   }
 }
