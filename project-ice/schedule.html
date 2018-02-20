@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ice Ace</title>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -45,81 +46,80 @@
   <main>
     <section class="program">
       <div class="container">
-        <h1>Выбрать программу</h1>
-        <table>
-          <tr>
-            <th>Спорт</th>
-            <th>Инструктор</th>
-            <th>Дата</th>
-            <th>Время</th>
-            <th>Стоимость</th>
+        <h1 class="program__caption">Выбрать программу</h1>
+        <table class="program__table">
+          <tr class="program__line">
+            <th class="program__home-cell">Спорт</th>
+            <th class="program__home-cell">Инструктор</th>
+            <th class="program__home-cell">Дата</th>
+            <th class="program__home-cell">Время</th>
+            <th class="program__home-cell">Стоимость</th>
           </tr>
-          <tr>
-            <td>Сноуборд</td>
-            <td>Константин Константинопольский</td>
-            <td>30.03.2017</td>
-            <td>12:00</td>
-            <td>2000 руб.</td>
-            <td><a href="#">Записаться</a></td>
+          <tr class="program__line">
+            <td class="program__cell">Сноуборд</td>
+            <td class="program__cell">Константин Константинопольский</td>
+            <td class="program__cell">30.03.2017</td>
+            <td class="program__cell">12:00</td>
+            <td class="program__cell">2000 руб.</td>
+            <td class="program__cell"><a href="#">Записаться</a></td>
           </tr>
-          <tr>
-            <td>Сноуборд</td>
-            <td>Константин Константинопольский</td>
-            <td>01.04.2017</td>
-            <td>12:00</td>
-            <td>2000 руб.</td>
-            <td><a href="#">Записаться</a></td>
+          <tr class="program__line">
+            <td class="program__cell">Сноуборд</td>
+            <td class="program__cell">Константин Константинопольский</td>
+            <td class="program__cell">01.04.2017</td>
+            <td class="program__cell">12:00</td>
+            <td class="program__cell">2000 руб.</td>
+            <td class="program__cell"><a href="#">Записаться</a></td>
           </tr>
-          <tr>
-            <td>Лыжи</td>
-            <td>Степан Александров</td>
-            <td>01.04.2017</td>
-            <td>13:00</td>
-            <td>3000 руб.</td>
-            <td><a href="#">Записаться</a></td>
+          <tr class="program__line">
+            <td class="program__cell">Лыжи</td>
+            <td class="program__cell">Степан Александров</td>
+            <td class="program__cell">01.04.2017</td>
+            <td class="program__cell">13:00</td>
+            <td class="program__cell">3000 руб.</td>
+            <td class="program__cell"><a href="#">Записаться</a></td>
           </tr>
-          <tr>
-            <td>Лыжи</td>
-            <td>Виталий Сергеев</td>
-            <td>03.04.2017</td>
-            <td>14:00</td>
-            <td>4000 руб.</td>
-            <td><a href="#">Записаться</a></td>
+          <tr class="program__line">
+            <td class="program__cell">Лыжи</td>
+            <td class="program__cell">Виталий Сергеев</td>
+            <td class="program__cell">03.04.2017</td>
+            <td class="program__cell">14:00</td>
+            <td class="program__cell">4000 руб.</td>
+            <td class="program__cell"><a href="#">Записаться</a></td>
           </tr>
-          <tr>
-            <td>Сноуборд</td>
-            <td>Арсений Петров</td>
-            <td>04.04.2017</td>
-            <td>14:00</td>
-            <td>4000 руб.</td>
-            <td><a href="#">Записаться</a></td>
+          <tr class="program__line">
+            <td class="program__cell">Сноуборд</td>
+            <td class="program__cell">Арсений Петров</td>
+            <td class="program__cell">04.04.2017</td>
+            <td class="program__cell">14:00</td>
+            <td class="program__cell">4000 руб.</td>
+            <td class="program__cell"><a href="#">Записаться</a></td>
           </tr>
         </table>
         </div>
       </section>
 
     <div class="slide">
-      <div class="container">
-        <figure class="slide_photo">
-          <p><img src="http://via.placeholder.com/100x100" alt="Константин  Константинопольский"></p>
-        <figcaption>Константин Константинопольский</figcaption>
-        </figure>
-        <h2>Free ride / продвинутый уровень</h2>
-        <p>Дата занятия — 30 марта 2017 года.</p>
-        <h3>Абонемент на разовое посещение (3 часа)</h3>
-        <p>Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.</p>
-        <a href="#">Узнать больше</a>
-        <p><b>2000</b><br>
-          <a href="#" class="btn">Купить</a>
+      <div class="slide__wrapper container">
+        <div class="slide__photo">
+          <img src="img/slide-photo.png" alt="Константин  Константинопольский">
+        </div>
+        <h2 class="slide__caption">Free ride / продвинутый уровень</h2>
+        <p class="slide__date">Дата занятия — 30 марта 2017 года.</p>
+        <h3 class="slide__name">Абонемент на разовое посещение (3 часа)</h3>
+        <p class="slide__description">Занятие рассчитано на опытных учеников и проходит вне подготовленной трассы, рядом с горнолыжной базой. Катание по нетронутому снегу раскрывает все возможности горных лыж, а опытный инструктор научит контролировать лыжи на любой поверхности.</p>
+        <a href="#" class="slide__link">Узнать больше</a>
+        <p class="slide__value"><b>2000</b><br>
+          <a href="#" class="slide__buy btn">Купить</a>
         </p>
-        <ul>
-          <li><a href="#">Стрелочка</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">Стрелочка</a></li>
+        <ul class="slide__title">
+          <li class="slide__list"><a href="#">Стрелочка</a></li>
+          <li class="slide__list"><a href="#">1</a></li>
+          <li class="slide__list"><a href="#">2</a></li>
+          <li class="slide__list"><a href="#">3</a></li>
+          <li class="slide__list"><a href="#">4</a></li>
+          <li class="slide__list"><a href="#">5</a></li>
+          <li class="slide__list"><a href="#">Стрелочка</a></li>
         </ul>
       </div>
     </div>
